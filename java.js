@@ -7,10 +7,9 @@ document.getElementById('certificateForm').addEventListener('submit', function(e
     var designation = document.getElementById('designation').value;
   
     var certificateContent = `
-     <h1>certificate</h1>
-      <p>This is to certify that <strong>${employeeName}</strong> has worked as a <strong>${designation}</strong> at <strong>${companyName}</strong> for a duration of <strong>${duration}</strong>.</p>
+      <i><p>This is to certify that <strong>${employeeName}</strong> has worked as a <strong>${designation}</strong> at <strong>${companyName}</strong> for a duration of <strong>${duration}</strong>.</p>
       <p>During their tenure, they have demonstrated excellent performance and contributed significantly to the success of our organization.</p>
-      <p>We wish them all the best in their future endeavors.</p>
+      <p><font face="lobster" color="blue">We wish them all the best in their future endeavors.</font></p></i>
     `;
   
     document.getElementById('certificateContent').innerHTML = certificateContent;
